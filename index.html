@@ -33,6 +33,14 @@
         makeElement.style.height = `${sizeValue}px`;
         return makeElement;
       }
+      // appendParent()
+      // 생성된 태그를 부모태그에 해당하는 객체에 아래의 실행함수로 작동
+      function appendParent(parentElement, makeItemElement) {
+        // 두 매개변수는 데이터타입이 객체다
+        parentElement.appendChild(makeItemElement);
+        return makeItemElement;
+      }
+      appendParent("root", makeElement("li", calcFunc(10, 20)));
     </script>
   </body>
 </html>
