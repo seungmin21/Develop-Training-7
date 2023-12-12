@@ -21,6 +21,18 @@
         return value;
       }
       console.log(calcFunc(1, 2));
+      // makeElement()
+      // 태그를 제작하는 과정에서 위 1번함수의 결정된 값을 활용한다.
+      function makeElement(tagName, sizeValue) {
+        // tagName 매개변수는 문자열
+        // sizeValue 매개변수는 숫자열
+        // 태그요소를 생성하고, 생성한 태그요소에 style값 중
+        // width 값과 height 값을 매개변수 sizeValue + px형태로 활용한다.
+        let makeElement = document.createElement(tagName);
+        makeElement.style.width = `${sizeValue}px`;
+        makeElement.style.height = `${sizeValue}px`;
+        return makeElement;
+      }
     </script>
   </body>
 </html>
