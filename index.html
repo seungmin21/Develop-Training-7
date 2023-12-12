@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div id="root"></div>
-  <script></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // calcFunc()
+      // 어떠한 숫자 값을 판단한다.
+      function calcFunc(first, second) {
+        // 매개변수 두개는 데이터타입이 숫자열이다.
+        // 둘 중 큰값을 결정하여 리턴한다.
+        if (first > second) {
+          value = first;
+        } else {
+          value = second;
+        }
+        return value;
+      }
+      console.log(calcFunc(1, 2));
+    </script>
+  </body>
 </html>
